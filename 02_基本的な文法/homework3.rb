@@ -1,4 +1,15 @@
+def isPrimeNumber(num)
+    if num == 2
+        return true
+    end
 
+    for i in 2..(num - 1)
+        if num % i == 0
+            return false
+        end
+    end
+    return true
+end
 
 begin
     input_num = gets.to_i
