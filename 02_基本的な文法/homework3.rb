@@ -15,7 +15,7 @@ end
 begin
     input_num = gets.to_i
     if input_num < 2
-        raise
+        raise RuntimeError
     end
 
     if isPrimeNumber(input_num)
