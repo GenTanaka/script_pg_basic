@@ -1,5 +1,5 @@
 input_num = gets.to_i
-max_asta = num * 2 - 1
+max_asta = input_num * 2 - 1
 asta_count = 1
 
 input_num.times {
