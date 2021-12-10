@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+
     <title>School</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
@@ -12,5 +14,6 @@
 
   <body>
     <%= yield %>
+    <%= image_tag "http://www.sfc.keio.ac.jp/img/logo.png", {width: "100%"}%>
   </body>
 </html>

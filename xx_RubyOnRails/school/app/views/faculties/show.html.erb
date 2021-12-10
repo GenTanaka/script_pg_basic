@@ -1,0 +1,19 @@
+<h1>Faculties#show</h1>
+<p><strong><%= @faculty.name %></strong></p>
+
+<table>
+    <thead>
+        <th>id</th>
+        <th>name</th>
+    </thead>
+    <tbody>
+        <% @students.each do |student| %>
+            <tr>
+                <% if student.faculty.name == @faculty.name %>
+                    <td><%= student.id %></td>
+                    <td><%= student.name %></td>
+                <% end %>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
